@@ -1,0 +1,28 @@
+html {
+  width: 100%;
+}
+body {
+  text-align: justify;
+  font-family: Arial;
+  font-size: 12pt;
+  margin: auto 50px;
+  line-height: 1.5;
+  margin-bottom: 50px;
+}
+
+h1 {
+  text-align: left;
+  font-size: 20pt;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 800px;
+  max-height: 800px;
+}
+
+@media (max-width: 880px) {
+  img {
+    width: 100%;
+  }
+}

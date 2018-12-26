@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Web Apps, Browsers, Servers, and the HTTP Protocol, OH MY! (A technical history lesson)</title>
+		
+		<link rel="stylesheet" href="//milosz.ch/styles.css">
+	</head>
+	<body>
+		<h1>Web Apps, Browsers, Servers, and the HTTP Protocol, OH MY!<br />
+		(A technical history lesson)</h1>
+		
+		<p>
+			A web app is any application that runs in a web browser. Only in a quarter of a century a plain text with hyperlinks evolved into a very complex web applications. Evolution of technologies involved in this process is a fascinating trip through the history with many turnovers that changed the way in which web pages were developed. It is so complex and with many layers and aspects involved that it is hard to describe it all at once in a greater detail. This is why in this paper I will only give headlines and my personal opinion of how I see this evolution.
+		</p>
+		<p>
+			It all started in 1989 with the project called WorldWideWeb started by Berners-Lee. First HTTP protocol had only GET method which enabled retrieval of, very primitive at this point, HTML documents with hyperlinks to other documents. First web pages were served by a very simple server called CERN httpd, only to be viewed by the first web browser called WorldWideWeb. Fortunately, at that time DNS was already matured and its format of address has not changed since.
+		</p>
+		<p>
+			Parallel to evolution of computer’s hardware, there was a rapid evolution of web technologies. This rapid evolution and rapid popularity have been possible due to the fact that all technologies involved were based on great flexibility, human-readable languages and fault tolerance in mind.
+		</p>
+		<p>
+			Lots of novelty happened in 1990’s. Each part of web chain, i.e. front-end, the connecting protocol and back-end was evolving in parallel.<br />
+			HTTP protocol was extended with POST verb, HTML evolved with many new tags. Forms and images, as well as, visual styling using HTML became possible. Meanwhile in 1994 Netscape browser was developed to handle all of these new features.<br />
+			At that time web page styling was done using HTML language. It became clear that HTML will soon become a chaos and this is why CSS was introduced to separate visual appearance from semantics.<br />
+			Another concern at that point was lack of any front-end language that could be used for interactivity on client side and this is why JavaScript was invented; it was shipped with a new version of Netscape browser.
+		</p>
+		<p>
+			Since then JavaScript, CSS, HTML and HTTP have evolved, greatly extending its features. It is fascinating how all of these technologies are mostly backwards compatible and how all of them survived and are practically the only choice used in the web chain.<br />
+			Some notable evolution points until beginning of new century were object and iframe tags in HTML, AJAX in JavaScript, and Cookies in HTTP.
+		</p>
+		<p>
+			Browser providers were in a massive fight in introducing lots of new features that obviously could not be in a standard right away. This caused a great browser compatibility chaos, the consequences of which are still noticeable today.
+			Noticeable event was introduction of Internet Explorer in mid 1990’s which, for a long time, quickly became the most popular browser in Internet.<br />
+			One must not forget about the influence of Macromedia Flash browser plugin since mid 1990’s that for a long time was a polyfil of everything that HTML, CSS, and JavaScript could not handle at the moment.<br />
+			On the other hand mid 1990’s brought as Apache, PHP and MySQL what revolutionized the way dynamic content was created on the server side.
+		</p>
+		<p>
+			As the popularity of Internet grew thanks to easier access to PCs and fast Internet connections, the popularity of web pages grew in parallel. More people got interested not only in browsing but also in building and hosting their own home web pages. This was possible thanks to server providers that were giving web space and a subdomain for free. A great influence of new web page spreading had FrontPage; although at the moment it seemed the worst tool available, still using it, it was possible to create a web page by any amatour that could handle a PC.
+		</p>
+		<p>
+			With growth of web pages, concerns about optimizations became more significant. In the beginning of 2000’s RESTful was defined for HTTP which, basically opened eyes to realize that HTTP protocol, apart of GET and POST verbs, has also very useful verbs like DELETE and PUT. Soon, JSON data format was introduced which later on replaced XML and became a standard data type in modern web services.
+		</p>
+		<p>
+			However, in the beginning of 2000’s all web pages were still very static with noticeable delay of each requested page. Only some of them had iframes and used AJAX to make the page more dynamic. Introduction of Gmail in 2004, the first true web application, has greatly influenced the way web pages were created. The application was an example of how to take the maximum of available technologies to create a smooth web email client.
+		</p>
+		<p>
+			Meanwhile, from the web developer’s point of view creating pages was real pain not only due to browser incompatibilities but also due to lack of good developer tools. It was mostly noticeable in JavaScript, where there was no way to tell where/what the error is, leaving usage of alert as the only debugger option.
+		</p>
+		<p>
+			In 2004 a new browser named Firefox was introduced. Since then, it was quickly gaining attention of not only browser users but also web developers mainly due to speed of application and possibility of writing extensions. One of such great extension was Firebug that completely changed the way developers debugged their web applications and certainly speeded up development process.
+		</p>
+		<p>
+			As time was passing, JavaScript stopped to be just a language that was only used to make some parts of page dynamic. Analogously to CSS, JavaScript usage more and more introduced chaos in HTML documents by mixing HTML and scripts in the same file.<br />
+			Because of amount of JavaScript that rapidly grew in web pages it became obvious that JavaScript needs tools to make the development sustainable. A lot of new MVC JavaScript frameworks appeared since.<br />
+			With Prototype Js and later on with jQuery, development process was revolutionized for two main reasons: solving browser incompatibilities, and using CSS selectors for DOM modification and attaching events. With these frameworks it was easier to stop polluting HTML with script insertions.<br />
+			On the other side in order to manage growing complexity of CSS, SCSS and later Less were introduced; they have been gaining its popularity since.
+		</p>
+		<p>
+			A great influence for web applications had an event in 2007 when iPhone was introduced. It completely revolutionized user interface of small screens. Since then, and later on after introducing iPad, development of web pages for different screen sizes became more important and responsive way of thinking started to play a role in web applications world.
+			With introduction of mobile devices capable of rendering web pages, web developers had to face new challenges which included: delay, processing power of the client browser, and bandwidth.<br />
+			This event had also a great influence on quicker development of HTML and CSS features because Apple devices did not support Adobe Flash (formerly Macromedia Flash).
+		</p>
+		<p>
+			As new user interfaces were evolving, great amount of CSS and JavaScript code started to slow down browsers. In 2008 Chrome browser was introduced which, with its new JavaScript engine, made a huge improvement in rendering of pages. The browser also introduced Developer Tools that could later on be used for remote debugging which was a saviour for developers that created pages on mobile devices. Chrome quickly became very popular among developers and later on among web users forcing Firefox, Internet Explorer and other browsers to improve their engines and developer tools.
+		</p>
+		<p>
+			Best practices for web applications development started to emerge. Instead of generating HTML templates on the back-end, RESTful services were used in order exchange only necessary data using JSON format. Template generation was moved to front-end. The consequence of this was saving a lot of bandwidth and moving processing power to front-end. Backbone.js and AngularJS are great examples of front-end web application frameworks.<br />
+			More care was taken over optimization of images. Images used for visual design were replaced with new features of CSS and SVGs that could scale up to any size. Cache bursting became desired for caching images, css and js files. Techniques like image sprites, custom fonts with symbols became a new trend. Writing of web applications was helped by Modernizr front-end framework that polyfilled most of browser incompatibilities like Local Storage. With usage of this framework developers could concentrate on creating better interfaces and not solving compatibility issues.<br />
+			Also with standardization of CSS3, HTML5 and JavaScript new features and with automatic updates of browsers, development became easier as developers could have higher expectation about a visual feature to be available on a future version of client’s browser.
+		</p>
+		<p>
+			When browsers started to support audio, video and canvas, importance of web application came into force even more as there was no more need for any external plugin.
+		</p>
+		<p>
+			Meanwhile, on the back-end side new programming languages with their MVC frameworks came out, for example, Ruby on Rails, Symfony, and Django. They helped with building of web services needed for web applications.<br />
+			Also, one cannot forget about reappearing of concept of NoSQL databases at that time, example of which is MongoDB. Many web application use this database as the back-end storage because of its flexibility.
+		</p>
+		<p>
+			Around end of 2010’s, web applications still had a significant problem which native applications did not; HTTP protocol was made for unidirectional communication so that fallbacks had to be made in order to push messages from server to client. Many of fallback solutions like long-polling consumed a lot of resources on the back-end and was too expensive to be sustainable.
+		</p>
+		<p>
+			Introduction of Node.js web server in 2009 was another breaking point in the history of web applications. It quickly became very popular among developers because it used JavaScript as its back-end language and could handle thousands of connections due to usage of only one thread.<br />
+			Introduction of Nginx in 2011, an alternative for Apache, also left a great footprint in web applications world. Nginx could also handle thousands of connection per one thread and introduced a cleaner JSON-like syntax for its configuration. With Nginx it also became popular to gzip content sent to clients in order to save bandwidth.
+			At last, introduction of WebSockets was the answer to unidirectional communication between server and client. Its support in modern browsers, in Nginx, and in Node.js through Socket.io extenson improved development process of web applications. Socket.io provided a clean fallback mechanisms that enabled web applications to be run in non-modern browsers too.
+		</p>
+		<p>
+			Recently Meteor JavaScript framework emerged that combines all new front-end and back-end technologies together and can be used to develop and deploy real-time web applications.
+		</p>
+		<p>
+			There exist great tools for development of web applications. In my opinion great and simple text editors are Notepad++, Sublime and WebStorm. On the other hand tools that help in development process are Bower, Grunt, JSLint/JSHint and Mocha. These tools help with package management, keeping the code clean, minifying the code, testing the code, and deployment. 
+		</p>
+		<p>
+			Some tries were taken in introducing alternatives like SPDY, Dart, TypeScript, CoffeeScript, and Google Web Toolkit that would replace HTTP and JavaScript. Although SPDY is a great improvement of HTTP, it still did not get through since it is not accepted by main web servers and browsers. Also none of front-end script languages are able to dethrone JavaScript mainly for the same reason but also because of great JavaScript frameworks that make this language more pleasant now. The success of JavaScript is in its great extensibility, flexibility and asynchronism.
+		</p>
+		<p>
+			Today there are many great web applications that are both responsive and practically indistinguishable from native applications. Some of them are: Chat in Gmail, Google Maps, Google Translate, Google Docs, Dropbox, and Trello. Modern web applications must take into account not only user interface but also caching, scalability, robustness, security and social component.
+		</p>
+		<p>
+			At this moment it seems like there is nothing new to invent in the web world; a web application has already all technologies that can be used to build any user interface that is the same or better than a mobile application or a desktop program. Web applications can be ported to mobile phones using PhoneGap and can be developed for Windows 8. Web applications are used in Chrome OS.<br />
+			The only concern of web application when comparing it to native one is its speed. However, the processing power constantly increases which makes this drawback less and less significant. Also, the ability for easy self-update of a web application is very compelling.<br />
+			I think that in the very near future web applications will overtake all technologies used to develop native applications leaving HTML, CSS, and JavaScript as the only languages with which all kind of UX programs will be built.
+		</p>
+    
+    <hr>
+    <time datetime="2014-10-01T23:50">October 10 2014</time>,
+    <a href="http://milosz.ch/" rel="author">Miłosz</a>
+    
+    <hr>
+    <div id="disqus_thread"></div>
+    <script>
+    var disqus_config = function () {
+      this.page.url = 'https://milosz.ch/web-apps.technical-essay.html';
+      this.page.identifier = 'web-apps.technical-essay';
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+
+    s.src = '//mieszko4.disqus.com/embed.js';
+
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+	</body>
+</html>
